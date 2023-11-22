@@ -1,0 +1,14 @@
+* {
+  background-color: #f4f1de;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+#logo {
+  font-family: "joly-display", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
