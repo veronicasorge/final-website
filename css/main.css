@@ -1,7 +1,12 @@
-* {
+body {
   background-color: #f4f1de;
+  margin: 0;
 }
 
+header {
+  display: flex;
+  background-color: white;
+}
 ul {
   display: flex;
   list-style: none;
@@ -20,6 +25,8 @@ a:hover {
   font-family: "joly-display", sans-serif;
   font-weight: 700;
   font-style: normal;
+  margin-left: 2rem;
+  font-size: large;
 }
 
 li {
