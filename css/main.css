@@ -14,7 +14,13 @@ ul {
   list-style: none;
   justify-content: center;
 }
-
+.icons {
+  display: flex;
+  justify-content: right;
+}
+.heart {
+  max-width: 20rem;
+}
 a {
   color: black;
   text-decoration: none;
@@ -35,17 +41,10 @@ li {
   margin-inline: 1.2rem;
 }
 
-.cart {
-  display: flex;
-}
-
 .container {
   display: grid;
   grid-gap: 1rem;
   grid-auto-flow: column;
   grid-auto-columns: 1fr 1fr 1fr;
   overflow-x: scroll;
-}
-
-.grid-item-1 {
 }
