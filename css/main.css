@@ -5,10 +5,19 @@
 ul {
   display: flex;
   list-style: none;
+  justify-content: center;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
 #logo {
   font-family: "joly-display", sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+
+li {
+  margin-inline: 1.2rem;
 }
