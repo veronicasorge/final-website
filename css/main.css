@@ -75,6 +75,7 @@ li {
   grid-row-start: 1;
   grid-row-end: 2;
   align-content: center;
+<<<<<<< HEAD
 }
 
 /*FOOTER*/
@@ -104,4 +105,6 @@ li {
 #customer-care,
 #about-us {
   margin-left: 25px;
+=======
+>>>>>>> parent of a8920da (grids)
 }
