@@ -6,6 +6,8 @@ body {
 header {
   display: flex;
   background-color: white;
+  position: fixed;
+  width: 100%;
 }
 ul {
   display: flex;
@@ -31,4 +33,19 @@ a:hover {
 
 li {
   margin-inline: 1.2rem;
+}
+
+.cart {
+  display: flex;
+}
+
+.container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr 1fr 1fr;
+  overflow-x: scroll;
+}
+
+.grid-item-1 {
 }
