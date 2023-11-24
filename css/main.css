@@ -87,6 +87,10 @@ li {
 .bestsellers-pictures {
   width: 100%;
 }
+.Earring-Photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
 .front-photos {
   display: grid;
