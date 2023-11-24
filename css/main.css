@@ -4,7 +4,7 @@ body {
   margin: 0;
 }
 
-/*HEADER*/
+/*header*/
 header {
   display: flex;
   background-color: white;
@@ -37,7 +37,7 @@ li {
   margin-inline: 1.2rem;
 }
 
-/*FOOTER*/
+/*footed*/
 footer {
   background-color: #3d405b;
   display: flex;
@@ -68,22 +68,7 @@ li {
 
 /* HOMEPAGE */
 
-/* CATEGORIES GRID */
-#categories-grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.categories-pictures {
-  width: 100%;
-}
-
-/*BESTSELLERS GRID*/
-#bestsellers-grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
+/*main pictures*/
 .bestsellers-pictures {
   width: 100%;
 }
@@ -105,4 +90,20 @@ li {
 .Earring-Photos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*categories grid*/
+#categories-grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.categories-pictures {
+  width: 100%;
+}
+
+/*bestsellers grid*/
+#bestsellers-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
