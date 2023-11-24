@@ -87,3 +87,18 @@ li {
 .bestsellers-pictures {
   width: 100%;
 }
+
+.front-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.gold-green-earings {
+  width: 100%;
+}
+.jewlery-girl {
+  width: 100%;
+}
+.Earring-Photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
