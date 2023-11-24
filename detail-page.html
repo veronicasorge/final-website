@@ -25,40 +25,68 @@
 
     <!-- MAIN -->
     <main>
-      <div class="main picture">
+      <!-- grid -->
+      <div id="detail-page-grid-1">
         <img
-          src="photos/clickable-product.webp"
+          src="photos/main-rainbow-earrings.jpg"
           alt="main product picture, gold"
+          id="main-product-picture"
         />
+        <div id="description-and-buttons">
+          <p class="billie">billie</p>
+          <p class="name-price">Mercy Earrings <br />€20,00</p>
+          <p class="product-description">
+          Enhance your style with our Rainbow Drop Earrings. These vibrant and
+          eye-catching accessories feature a mesmerizing array of colors, adding
+          a touch of playfulness and elegance to any outfit. Crafted with
+          precision and attention to detail, our Rainbow Drop Earrings are the
+          perfect statement piece to express your unique personality.
+          </p>
+
+          <!-- dropdown menu -->
+          <label for="dropdown">Select an option:</label>
+          <select id="dropdown" name="dropdown">
+            <option value="option1">Gold</option>
+            <option value="option2">Silver</option>
+          </select>
+
+          <!-- add to cart button -->
+         <a href="cart.html"><div class="add-to-cart-button">
+            <input type="submit" value="Add to Cart" />
+         </div></a>
       </div>
 
-      <div class="product pictures">
-        <img src="photos/clickable-product-silver.webp" alt="silver" />
-        <img src="photos/detail-1.webp" alt="picture of the product" />
-        <img src="photos/detail-2.webp" alt="picture of the product" />
+<!-- grid for small pictures -->
+      <div id="secondary-pictures">
+        <img src="photos/detail-1.jpg" alt="picture of the product" class="product-pictures"/>
+        <img src="photos/detail-2.jpg" alt="picture of the product" class="product-pictures"/>
+        <img src="photos/detail-3.jpg" alt="picture of the product" class="product-pictures"/>
       </div>
+      <br>
 
-      <p class="billie">billie</p>
-      <p class="name-price">Mercy Earrings <br />€20,00</p>
-      <p class="product-description">
-        Enhance your style with our Rainbow Drop Earrings. These vibrant and
-        eye-catching accessories feature a mesmerizing array of colors, adding a
-        touch of playfulness and elegance to any outfit. Crafted with precision
-        and attention to detail, our Rainbow Drop Earrings are the perfect
-        statement piece to express your unique personality.
-      </p>
+      <!-- you might also like section -->
+      <h1>You might also like...</h1> <br>
+      <div class="ymal-grid-container">
+      <figure>
+        <img src="photos/sun-earrings.jpg" alt="sun hoops" class="ymal-pictures"/>
+          <figcaption>Sun Hoops</figcaption>
+      </figure>
 
-      <!-- DROPDOWN MENU -->
-      <label for="dropdown">Select an option:</label>
-      <select id="dropdown" name="dropdown">
-        <option value="option1">Gold</option>
-        <option value="option2">Silver</option>
-
-        <!-- ADD TO CART BUTTON -->
-        <div class="add-to-cart-button">
-          <input type="submit" value="Add to Cart" />
-        </div>
-      </select>
+      <figure>
+        <img src="photos/red-heart-earrings.jpg" alt="red heart earrings" class="ymal-pictures"/>
+          <figcaption>Red Heart Earrings</figcaption>
+      </figure>
+    
+      <figure>
+        <img src="photos/ribbon-earrings.jpg" alt="ribbon earrings" class="ymal-pictures"/>
+         <figcaption>Blue Gems Ribbons</figcaption>
+      </figure>
+    
+       <figure>
+        <img src="photos/star-earrings.jpg" alt="star earrings" class="ymal-pictures"/>
+         <figcaption>Star Earrings</figcaption>
+       </figure>
+      </div>
     </main>
 
     <!-- FOOTER -->

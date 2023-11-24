@@ -10,11 +10,13 @@ header {
   background-color: white;
   position: fixed;
   width: 100%;
+  align-items: center;
 }
 ul {
   display: flex;
   list-style: none;
   justify-content: center;
+  font-size: 18pt;
 }
 
 a {
@@ -30,17 +32,18 @@ a:hover {
   font-weight: 700;
   font-style: normal;
   margin-left: 2rem;
-  font-size: large;
+  font-size: 25pt;
 }
 
 li {
   margin-inline: 1.2rem;
 }
 
-/*footed*/
+/*footer*/
 footer {
   background-color: #3d405b;
   display: flex;
+  margin-top: 50px;
 }
 
 .footer-contacts,
@@ -87,23 +90,75 @@ li {
 .jewlery-girl {
   width: 100%;
 }
-.Earring-Photos {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
 
 /*categories grid*/
 #categories-grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+  margin-left: 20px;
+}
+
+figcaption {
+  font-size: 15pt;
 }
 
 .categories-pictures {
-  width: 100%;
+  width: 130%;
 }
 
 /*bestsellers grid*/
 #bestsellers-grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.bestsellers-pictures {
+  width: 120%;
+}
+
+/* EARRINGS PRODUCT PAGE */
+
+#earrings-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.earrings-pictures {
+  width: 100%;
+}
+
+/* DETAIL PAGE */
+
+#detail-page-grid-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#secondary-pictures {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.product-pictures {
+  width: 100%;
+}
+
+.ymal-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.ymal-pictures {
+  width: 100%;
+}
+
+/* CART PAGE*/
+#yourcart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#cart-picture {
+  width: 100%;
 }
