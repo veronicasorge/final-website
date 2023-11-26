@@ -3,6 +3,8 @@
 body {
   background-color: #f4f1de;
   margin: 0;
+  padding: 0%;
+  width: 100%;
 }
 * h1 {
   padding-left: 1rem;
@@ -17,6 +19,7 @@ header {
   margin: 0;
   justify-content: space-between;
   margin-bottom: 10rem;
+  position: fixed;
 }
 
 #icons img {
@@ -74,7 +77,8 @@ footer:not(#logo) {
   display: grid;
   grid-template-columns: repeat (3, 1fr);
   grid-template-rows: 1fr;
-  align-content: center;
+
+  text-align: center;
   margin: 0;
 }
 .footer-contacts {
@@ -172,6 +176,7 @@ figcaption {
 .earrings-pictures {
   width: 100%;
   object-fit: cover;
+  margin-top: 1rem;
 }
 
 /* DETAIL PAGE */
@@ -211,10 +216,15 @@ figcaption {
 .ymal-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 200%;
 }
 
 .ymal-pictures {
   width: 100%;
+  align-items: center;
+}
+.product-description {
+  width: 20rem;
 }
 
 /* CART PAGE*/
@@ -226,6 +236,15 @@ figcaption {
 #cart-picture {
   width: 100%;
 }
+.ymal-grid-container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+}
+h2 {
+  margin-top: 0rem;
+  padding-top: 8rem;
+}
 
 /* MEDIA QUERIE*/
 @media screen and (max-width: 600px) {
@@ -236,5 +255,14 @@ figcaption {
   .categories-pictures {
     grid-column-start: 1;
     grid-column-end: 2;
+  }
+  #earrings-grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .ymal-grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .ymal-grid-container2 {
+    grid-template-columns: 1fr 1fr;
   }
 }
