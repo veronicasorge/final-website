@@ -14,7 +14,7 @@
       <a href="homepage.html"><p id="logo">billie</p></a>
       <nav>
         <ul>
-          <li>New In</li>
+          <li id="new-in">New In</li>
           <li>Bestsellers</li>
           <li>Rings</li>
           <li>Necklaces</li>
@@ -23,88 +23,139 @@
         </ul>
       </nav>
       <div id="icons">
-        <div><img src="photos/like.png" alt="favorites" /></div>
-        <div><img src="photos/user.png" alt="user" /></div>
-        <div><img src="photos/bag.png" alt="cart" /></div>
+        <img src="photos/like.png" alt="favorites" />
+        <img src="photos/user.png" alt="user" />
+        <a href="cart.html"><img src="photos/bag.png" alt="cart" /></a>
       </div>
     </header>
 
-    <!-- your cart section -->
+    <!-- MAIN -->
+    <main>
+      <!-- your cart section -->
+      <h1 id="your-cart">Your cart</h1>
 
-    <h2>Your cart</h2>
+      <div id="yourcart-grid">
+        <img src="photos/main-rainbow-earrings.jpg" alt="" id="cart-picture" />
+        <p id="cart-info">Rainbow Drop Earrings <br />Gold <br />€20,00</p>
+      </div>
 
-    <div>
-        <img src="photos/main-rainbow-earrings.jpg" alt="">
-        <p>Rainbow Drop Earrings <br>Gold <br>€20,00</p>
-        
-    </div>
+      <!-- you might also like section -->
+      <h1>You might also like...</h1>
+      <br />
+      <div class="ymal-grid-container">
+        <figure>
+          <img
+            src="photos/sun-earrings.jpg"
+            alt="sun hoops"
+            class="ymal-pictures"
+          />
+          <figcaption>Sun Hoops</figcaption>
+        </figure>
 
-     <!-- you might also like section -->
-     <h1>You might also like...</h1> <br>
-     <div class="ymal-grid-container2">
-     <figure>
-       <img src="photos/sun-earrings.jpg" alt="sun hoops" class="ymal-pictures"/>
-         <figcaption>Sun Hoops</figcaption>
-     </figure>
+        <figure>
+          <img
+            src="photos/red-heart-earrings.jpg"
+            alt="red heart earrings"
+            class="ymal-pictures"
+          />
+          <figcaption>Red Heart Earrings</figcaption>
+        </figure>
 
-     <figure>
-       <img src="photos/red-heart-earrings.jpg" alt="red heart earrings" class="ymal-pictures"/>
-         <figcaption>Red Heart Earrings</figcaption>
-     </figure>
-   
-     <figure>
-       <img src="photos/ribbon-earrings.jpg" alt="ribbon earrings" class="ymal-pictures"/>
-        <figcaption>Blue Gems Ribbons</figcaption>
-     </figure>
-   
-      <figure>
-       <img src="photos/star-earrings.jpg" alt="star earrings" class="ymal-pictures"/>
-        <figcaption>Star Earrings</figcaption>
-      </figure>
-     </div>
+        <figure>
+          <img
+            src="photos/ribbon-earrings.jpg"
+            alt="ribbon earrings"
+            class="ymal-pictures"
+          />
+          <figcaption>Blue Gems Ribbons</figcaption>
+        </figure>
 
-     <!-- contact and shipping information form -->
-    <h2>Contact information</h2>
-    <form>
-        <input type="email" placeholder="Email" required/>
+        <figure>
+          <img
+            src="photos/star-earrings.jpg"
+            alt="star earrings"
+            class="ymal-pictures"
+          />
+          <figcaption>Star Earrings</figcaption>
+        </figure>
+      </div>
 
-        <input type="text" placeholder="Name"  required/>
+      <!-- contact and shipping information form -->
+      <h2>Contact information</h2>
+      <form>
+        <input type="email" placeholder="Email" required />
 
-        <input type="text" placeholder="Surname" required/>
+        <input type="text" placeholder="Name" required />
 
-        <input type="text" placeholder="Phone Number (optional)"  />
-    </form>
+        <input type="text" placeholder="Surname" required />
 
-    <h2>Shipping Information</h2>
-    <form>
-        <input type="text" placeholder="Country"  required/>
-    
-        <input type="text" placeholder="Name"  required/>
-    
-        <input type="text" placeholder="Surname" required/>
-    
-        <input type="text" placeholder="Phone Number"  />
+        <input type="text" placeholder="Phone Number (optional)" />
+      </form>
 
-        <input type="text" placeholder="Address"  required/>
+      <h2>Shipping Information</h2>
+      <form>
+        <input type="text" placeholder="Country" required />
 
-        <input type="text" placeholder="Additional address information (optional)" />
+        <input type="text" placeholder="Name" required />
 
-        <input type="text" placeholder="Postcode"  required/>
+        <input type="text" placeholder="Surname" required />
 
-        <input type="text" placeholder="City"  required/>
-        </form>
+        <input type="text" placeholder="Phone Number" />
 
-    <h2>Payment Information</h2>
-    <form>
-        <input type="text" placeholder="Card Number"  required/>
-    
-        <input type="text" placeholder="Expiration Date" required/>
-    
-        <input type="text" placeholder="CVV"  />
-    </form>
-<br>
+        <input type="text" placeholder="Address" required />
+
+        <input
+          type="text"
+          placeholder="Additional address information (optional)"
+        />
+
+        <input type="text" placeholder="Postcode" required />
+
+        <input type="text" placeholder="City" required />
+      </form>
+
+      <h2>Payment Information</h2>
+      <form>
+        <input type="text" placeholder="Card Number" required />
+
+        <input type="text" placeholder="Expiration Date" required />
+
+        <input type="text" placeholder="CVV" />
+      </form>
+      <br />
       <button>Confirm Payment</button>
-    </div>
-   </main>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="grid-footer-container">
+        <div class="footer-contacts">
+          <p id="contacts">CONTACTS</p>
+          <li>Instagram</li>
+          <li>Tik Tok</li>
+          <li>Facebook</li>
+          <li>Pinterest</li>
+          <li>Twitter</li>
+        </div>
+
+        <div class="footer-customer-care">
+          <p id="customer-care">CUSTOMER CARE</p>
+          <li>Contact Us</li>
+          <li>Warranty</li>
+          <li>Shipping</li>
+          <li>Returns&Exchange</li>
+          <li>Size Guide</li>
+          <li>Terms and Conditions</li>
+          <li>FAQ</li>
+        </div>
+
+        <div class="footer-about-us">
+          <p id="about-us">ABOUT US</p>
+          <li>Our Story</li>
+          <li>Collaborations</li>
+          <li>Job Opportunities</li>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
