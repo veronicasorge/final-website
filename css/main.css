@@ -171,6 +171,7 @@ figcaption {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding-top: 6rem;
+  align-items: center;
 }
 
 .earrings-pictures {
@@ -182,39 +183,33 @@ figcaption {
 /* DETAIL PAGE */
 
 #detail-page-grid-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 0;
+  display: flex;
+  align-items: start;
 }
 
 #main-product-picture {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  max-width: 70%;
-  max-height: 100%;
-  margin-top: 7rem;
+  margin-top: 11rem;
   margin-bottom: 2rem;
-  margin-left: 2rem;
+  width: 30%;
+  height: 30%;
 }
+
 #description-and-buttons {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  margin-top: 7rem;
+  margin-top: 11rem;
+  margin-left: 2rem;
   margin-right: 2rem;
   text-align: left;
 }
 #secondary-pictures {
-  display: flex;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 9rem;
+  margin-left: 2rem;
   grid-gap: 1rem;
-  width: 25%;
-  margin-left: 15px;
-  margin-top: 2rem;
-  width: 30%;
 }
 
 .product-pictures {
-  width: 50%;
+  width: 30%;
 }
 
 .ymal-grid-container {
