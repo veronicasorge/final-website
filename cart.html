@@ -25,23 +25,24 @@
       <div id="icons">
         <div><img src="photos/like.png" alt="favorites" /></div>
         <div><img src="photos/user.png" alt="user" /></div>
-        <div><img src="photos/bag.png" alt="cart" /></div>
+        <a href="cart.html"><img src="photos/bag.png" alt="cart" /></a>
       </div>
     </header>
-
+  <!-- MAIN -->
+    <main>
     <!-- your cart section -->
 
-    <h2>Your cart</h2>
+    <h1 id="your-cart">Your cart </h1>
 
-    <div>
-        <img src="photos/main-rainbow-earrings.jpg" alt="">
-        <p>Rainbow Drop Earrings <br>Gold <br>€20,00</p>
+    <div id="yourcart-grid">
+        <img src="photos/main-rainbow-earrings.jpg" alt="" id="cart-picture">
+        <p id="cart-info">Rainbow Drop Earrings <br>Gold <br>€20,00</p>
         
     </div>
 
      <!-- you might also like section -->
      <h1>You might also like...</h1> <br>
-     <div class="ymal-grid-container2">
+     <div class="ymal-grid-container">
      <figure>
        <img src="photos/sun-earrings.jpg" alt="sun hoops" class="ymal-pictures"/>
          <figcaption>Sun Hoops</figcaption>
@@ -102,9 +103,9 @@
     
         <input type="text" placeholder="CVV"  />
     </form>
-<br>
+    <br>
       <button>Confirm Payment</button>
     </div>
-   </main>
+  </main>
   </body>
 </html>
