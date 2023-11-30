@@ -296,6 +296,10 @@ figcaption {
   width: 20rem;
 }
 
+.changed-image {
+  width: 1rem;
+}
+
 /* CART PAGE*/
 #yourcart-grid {
   display: flex;

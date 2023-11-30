@@ -24,7 +24,9 @@
       <div id="icons">
         <img src="photos/like.png" alt="favorites" />
         <img src="photos/user.png" alt="user" />
-        <a href="cart.html"><img src="photos/bag.png" alt="cart" /></a>
+        <a href="cart.html"
+          ><img id="cart1" src="photos/bag.png" alt="cart"
+        /></a>
       </div>
     </header>
 
@@ -74,10 +76,13 @@
           </select>
 
           <!-- add to cart button -->
-          <a href="cart.html"
-            ><div class="add-to-cart-button">
-              <input type="submit" value="Add to Cart" /></div
-          ></a>
+          <!-- <a href="cart.html" -->
+          >
+          <div class="add-to-cart-button">
+            <!-- <input type="submit" value="Add to Cart" /> -->
+            <button onclick="changeImage()">Add to Cart</button>
+            <script src="main.js"></script>
+          </div>
         </div>
       </div>
 
