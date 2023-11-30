@@ -166,12 +166,54 @@ figcaption {
 }
 
 /* EARRINGS PRODUCT PAGE */
+.grid-earringtypes {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 3rem;
+  justify-content: left;
+}
+.filter {
+  width: 1.8rem;
+  float: right;
+  margin-right: 2rem;
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+.filterby {
+  text-align: right;
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+.filterby:hover {
+  text-decoration: underline;
+}
+.hoops,
+.droop,
+.helix,
+.studs,
+.single {
+  background-color: #e07a5f;
+  border: #e07a5f;
+  border-radius: 0.2rem;
+  height: 2rem;
+  font-weight: 700;
+  width: 8rem;
+}
+#earrings-title {
+  margin-top: 2rem;
+  z-index: 2;
+}
 
 #earrings-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 6rem;
+  padding-top: 5rem;
   align-items: center;
+  clear: both;
+  padding-top: 0;
 }
 
 .earrings-pictures {
