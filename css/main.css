@@ -4,26 +4,20 @@ body {
   background-color: #fffcf7;
   margin: 0;
   padding: 0%;
-  margin: 0;
   width: 100%;
-  min-height: 100%;
 }
 * h1 {
   padding-left: 1rem;
-  padding: 0;
-  margin: 0;
 }
 /*header*/
 header {
-  margin-right: 0;
-  margin-left: 0;
-  margin-top: 0;
-  position: fixed;
   display: flex;
   background-color: white;
+  position: absolute;
   width: 100%;
   height: 10%;
   align-items: center;
+  margin: 0;
   justify-content: space-between;
   margin-bottom: 10rem;
   position: fixed;
@@ -70,13 +64,12 @@ a:hover {
 }
 
 /*footer*/
-footer {
+footer:not(#logo) {
   margin: 0;
-  width: 100%;
   background-color: #3d405b;
   margin-top: 1rem;
   color: white;
-  position: sticky;
+  position: absolute;
   left: 0;
   right: 0px;
   list-style: none;
@@ -84,23 +77,25 @@ footer {
 
 .grid-footer-container {
   display: grid;
-  grid-auto-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat (3, 1fr);
+  grid-template-rows: 1fr;
+
   text-align: left;
+  margin: 0;
 }
 .footer-contacts {
   grid-column-start: 1;
   grid-column-end: 2;
-  padding-left: 0;
 }
 .footer-customer-care {
   grid-column-start: 2;
   grid-column-end: 3;
-  padding-left: 0;
+  padding-left: 50%;
 }
 .footer-about-us {
   grid-column-start: 3;
   grid-column-end: 4;
-  padding-left: 0;
+  padding-left: 50%;
 }
 
 .footer-contacts,
@@ -112,11 +107,7 @@ footer {
 }
 
 /* HOMEPAGE */
-.categories,
-.bestsellers {
-  font-size: 1.5rem;
-  padding-left: 2rem;
-}
+
 /*main pictures*/
 .bestsellers-pictures {
   width: 100%;
@@ -175,66 +166,12 @@ figcaption {
 }
 
 /* EARRINGS PRODUCT PAGE */
-.grid-earringtypes {
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2rem;
-  justify-content: left;
-}
-.filter {
-  width: 1.5rem;
-  float: right;
-  margin-right: 2rem;
-  margin-left: 1rem;
-  margin-bottom: 0;
-}
 
-.filterby {
-  text-align: right;
-  margin-top: 2rem;
-  margin-bottom: 0;
-}
-
-.filterby:hover {
-  text-decoration: underline;
-}
-.hoops,
-.droop,
-.helix,
-.studs,
-.single {
-  background-color: #e07a5f;
-  border: #e07a5f;
-  border-radius: 0.2rem;
-  height: 2rem;
-  font-weight: 700;
-  width: 8rem;
-}
-.hoops:hover,
-.droop:hover,
-.helix:hover,
-.studs:hover,
-.single:hover {
-  text-decoration: underline;
-}
-
-#earrings-title {
-  margin-top: 0;
-  padding-top: 6rem;
-  padding-left: 2rem;
-  z-index: 2;
-  font-size: 1.5rem;
-}
 #earrings-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 5rem;
+  padding-top: 6rem;
   align-items: center;
-  clear: both;
-  padding-top: 0;
 }
 
 .earrings-pictures {
@@ -243,49 +180,71 @@ figcaption {
   margin-top: 1rem;
 }
 
-.earrings {
-  * {
-    margin: 0;
-    padding: 0;
-  }
-}
-
 /* DETAIL PAGE */
 
 #detail-page-grid-1 {
-  display: flex;
-  align-items: start;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0;
+  margin-bottom: 5rem;
 }
 
 #main-product-picture {
-  margin-top: 11rem;
+  margin-top: 10rem;
   margin-bottom: 2rem;
-  width: 30%;
-  height: 30%;
+  width: 80%;
+  grid-column: span 2;
 }
 
 #description-and-buttons {
-  margin-top: 11rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-top: 10rem;
+  margin-right: 11rem;
   text-align: left;
 }
+
+#billie {
+  font-family: "joly-display", sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
+  color: #3d405b;
+}
+
 #secondary-pictures {
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 9rem;
-  margin-left: 2rem;
   grid-gap: 1rem;
+  margin-top: 7rem;
+  margin-left: 2rem;
 }
 
 .product-pictures {
-  width: 30%;
+  width: 80%;
+}
+
+#dropdown {
+  width: 100%;
+  height: 5%;
+  background-color: #3d405b;
+  color: white;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+#add-to-cart-button {
+  width: 100%;
+  height: 5%;
+  background-color: #3d405b;
+  color: white;
+  border-radius: 1rem;
+  margin-top: 5rem;
+  border: none;
 }
 
 .ymal-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
+  margin-bottom: 3rem;
 }
 
 .ymal-pictures {
@@ -294,10 +253,6 @@ figcaption {
 }
 .product-description {
   width: 20rem;
-}
-
-.changed-image {
-  width: 1rem;
 }
 
 /* CART PAGE*/

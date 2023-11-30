@@ -6,6 +6,7 @@
     <title>Detail Page</title>
     <link rel="stylesheet" href="https://use.typekit.net/ahe7seo.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js"></script>
   </head>
   <body>
     <!-- HEADER -->
@@ -49,6 +50,7 @@
             src="photos/detail-3.jpg"
             alt="picture of the product"
             class="product-pictures"
+            id="detail-picture-3"
           />
         </div>
 
@@ -59,8 +61,11 @@
         />
 
         <div id="description-and-buttons">
-          <p class="billie">billie</p>
-          <p class="name-price">Mercy Earrings <br />€20,00</p>
+          <p id="billie">billie</p>
+          <p class="name-price">
+            Mercy Earrings <br />
+            <br />€20,00
+          </p>
           <p class="product-description">
             Enhance your style with our Rainbow Drop Earrings. These vibrant and
             eye-catching accessories feature a mesmerizing array of colors,
@@ -68,21 +73,18 @@
             with precision and attention to detail, our Rainbow Drop Earrings
             are the perfect statement piece to express your unique personality.
           </p>
+          <br />
           <!-- dropdown menu -->
-          <label for="dropdown">Select an option:</label>
-          <select id="dropdown" name="dropdown">
+          <label id="label-dropdown" for="dropdown">Select an option:</label>
+          <select id="dropdown" name="dropdown" onchange="updateImages()">
             <option value="option1">Gold</option>
             <option value="option2">Silver</option>
           </select>
-
+          <br />
           <!-- add to cart button -->
-          <!-- <a href="cart.html" -->
-          >
-          <div class="add-to-cart-button">
-            <!-- <input type="submit" value="Add to Cart" /> -->
-            <button onclick="changeImage()">Add to Cart</button>
-            <script src="main.js"></script>
-          </div>
+          <button id="add-to-cart-button" onclick="changeImage()">
+            Add to Cart
+          </button>
         </div>
       </div>
 
