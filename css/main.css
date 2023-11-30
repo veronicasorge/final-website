@@ -222,6 +222,13 @@ figcaption {
   margin-top: 1rem;
 }
 
+.earrings {
+  * {
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+}
+
 /* DETAIL PAGE */
 
 #detail-page-grid-1 {
