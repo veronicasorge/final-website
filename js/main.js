@@ -7,6 +7,7 @@ function changeImage() {
     cartImage.classList.add("changed-image");
 
     document.querySelector(".add-to-cart-button button").disabled = true;
+    localStorage.setItem("cartImageSrc", "photos/bag-with-item.png");
   }
 }
 
