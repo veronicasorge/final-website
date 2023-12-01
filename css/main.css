@@ -257,8 +257,8 @@ figcaption {
 }
 
 #earrings-title {
+  margin-top: 0;
   padding-top: 6rem;
-  margin: 0;
 }
 
 #earrings-grid-container {
@@ -356,6 +356,15 @@ figcaption {
 }
 .product-description {
   width: 20rem;
+}
+
+#cart1.changed-image {
+  width: 1.8rem;
+  height: 1.9rem;
+
+  margin: 0;
+  padding-right: 0.5rem;
+  padding-left: 0.2rem;
 }
 
 /* CART PAGE*/

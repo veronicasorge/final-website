@@ -1,10 +1,13 @@
 function changeImage() {
   const cartImage = document.getElementById("cart1");
-  if (cartImage.src.match("photos/bag.png")) {
+
+  if (cartImage.src.includes("photos/bag.png")) {
     cartImage.src = "photos/bag-with-item.png";
-  } else {
-    cartImage.src = "photos/bag.png";
+
     cartImage.classList.add("changed-image");
+
+    document.querySelector(".add-to-cart-button button").disabled = true;
+    localStorage.setItem("cartImageSrc", "photos/bag-with-item.png");
   }
 }
 
