@@ -17,10 +17,15 @@ header {
   width: 100%;
   height: 10%;
   align-items: center;
-  margin: 0;
   justify-content: space-between;
+  margin: 0;
   margin-bottom: 10rem;
   position: fixed;
+}
+
+#icons {
+  display: flex;
+  margin-inline: 1rem;
 }
 
 #icons img {
@@ -30,17 +35,13 @@ header {
   display: flex;
 }
 
-#icons {
-  display: flex;
-  margin-inline: 1rem;
-}
-
 ul {
   display: flex;
   list-style: none;
   font-size: 1rem;
   margin: 0;
 }
+
 li {
   margin: 0;
   padding: 0.8rem;
@@ -63,11 +64,56 @@ a:hover {
   padding-left: 2rem;
 }
 
+#sidebar-icon {
+  display: none;
+}
+
+@media screen and (max-width: 827px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    z-index: 1;
+    width: 13rem;
+    height: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 5px 0;
+  }
+
+  #icons {
+    margin: 3rem;
+    margin-top: 90%;
+  }
+
+  #sidebar-logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  #logo {
+    padding: 0;
+  }
+
+  #sidebar-icon {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 2rem;
+  }
+}
+
 /*footer*/
-footer:not(#logo) {
-  margin: 0;
+footer {
   background-color: #3d405b;
   margin-top: 1rem;
+  padding-bottom: 1rem;
   color: white;
   position: absolute;
   left: 0;
@@ -138,6 +184,13 @@ footer:not(#logo) {
   grid-column-end: 3;
 }
 
+@media screen and (max-width: 827px) {
+  .gold-green-earings,
+  .jewlery-girl {
+    margin-top: 0;
+  }
+}
+
 /*categories grid*/
 #categories-grid-container {
   display: grid;
@@ -202,6 +255,7 @@ figcaption {
   font-weight: 700;
   width: 8rem;
 }
+
 #earrings-title {
   padding-top: 6rem;
   margin: 0;
