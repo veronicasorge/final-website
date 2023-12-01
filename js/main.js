@@ -21,3 +21,17 @@ function updateImages() {
     detailPicture3.src = "photos/detail-3.jpg";
   }
 }
+
+const images = document.querySelectorAll(".earrings-pictures");
+
+images.forEach((image) => {
+  image.addEventListener("mouseover", () => {
+    const imageName = dropearrings.id; // Get the ID of the hovered image
+    image.src = `/photos/drop.webp${imageName}-hover.jpg`; // Change source to the hover image
+  });
+
+  image.addEventListener("mouseout", () => {
+    const imageName = image.id; // Get the ID of the hovered image
+    image.src = `photos/${imageName}.jpg`; // Change source back to the original image
+  });
+});

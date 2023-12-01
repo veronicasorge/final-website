@@ -6,6 +6,7 @@
     <title>Cart</title>
     <link rel="stylesheet" href="https://use.typekit.net/ahe7seo.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ahe7seo.css" />
   </head>
 
   <body>
@@ -40,8 +41,8 @@
       </div>
 
       <!-- you might also like section -->
-      <h1>You might also like...</h1>
-      <br />
+      <h1 class="ymal">You might also like...</h1>
+
       <div class="ymal-grid-container">
         <figure>
           <img
@@ -81,49 +82,43 @@
       </div>
 
       <!-- contact and shipping information form -->
-      <h2>Contact information</h2>
-      <form>
-        <input type="email" placeholder="Email" required />
+      <div class="box1">
+        <h2>Contact information</h2>
+        <form>
+          <input type="text" placeholder="Name" required />
+          <input type="text" placeholder="Surname" required />
+          <input type="email" placeholder="Email" required />
+          <br />
+          <input type="text" placeholder="Phone Number (optional)" />
+        </form>
+      </div>
 
-        <input type="text" placeholder="Name" required />
-
-        <input type="text" placeholder="Surname" required />
-
-        <input type="text" placeholder="Phone Number (optional)" />
-      </form>
-
-      <h2>Shipping Information</h2>
-      <form>
-        <input type="text" placeholder="Country" required />
-
-        <input type="text" placeholder="Name" required />
-
-        <input type="text" placeholder="Surname" required />
-
-        <input type="text" placeholder="Phone Number" />
-
-        <input type="text" placeholder="Address" required />
-
-        <input
-          type="text"
-          placeholder="Additional address information (optional)"
-        />
-
-        <input type="text" placeholder="Postcode" required />
-
-        <input type="text" placeholder="City" required />
-      </form>
-
-      <h2>Payment Information</h2>
-      <form>
-        <input type="text" placeholder="Card Number" required />
-
-        <input type="text" placeholder="Expiration Date" required />
-
-        <input type="text" placeholder="CVV" />
-      </form>
+      <div class="box2">
+        <h2>Shipping Information</h2>
+        <form>
+          <input type="text" placeholder="Name" required />
+          <input type="text" placeholder="Surname" required />
+          <input type="text" placeholder="Phone Number" />
+          <input type="text" placeholder="Country" required />
+          <input type="text" placeholder="City" required />
+          <input type="text" placeholder="Address" required />
+          <input type="text" placeholder="Postcode" required />
+          <input
+            type="text"
+            placeholder="Additional address information (optional)"
+          />
+        </form>
+      </div>
+      <div class="box2">
+        <h2>Payment Information</h2>
+        <form>
+          <input type="text" placeholder="Card Number" required />
+          <input type="text" placeholder="Expiration Date" required />
+          <input type="text" placeholder="CVV" />
+        </form>
+      </div>
       <br />
-      <button>Confirm Payment</button>
+      <button class="buttoncart">Confirm Payment</button>
     </main>
 
     <!-- FOOTER -->
