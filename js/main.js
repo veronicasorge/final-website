@@ -38,3 +38,8 @@ images.forEach((image) => {
     image.src = `photos/${imageName}.jpg`; // Change source back to the original image
   });
 });
+
+document.getElementById("sidebar-icon").addEventListener("click", function () {
+  // Toggle the 'open' class on the sidebar container
+  document.getElementById("sidebar-container").classList.toggle("open");
+});
