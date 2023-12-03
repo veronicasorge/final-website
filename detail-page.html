@@ -25,9 +25,11 @@
           <li><a href="earrings.html">Earrings</a></li>
         </ul>
       </nav>
+
       <div id="icons">
         <img src="photos/like.png" alt="favorites" />
         <img src="photos/user.png" alt="user" />
+        <div id="cartCounter">0</div>
         <a href="cart.html"><img src="photos/bag.png" alt="cart" /></a>
       </div>
     </header>
@@ -83,9 +85,19 @@
           </select>
           <br />
           <!-- add to cart button -->
-          <button id="add-to-cart-button" onclick="changeImage()">
-            Add to Cart
-          </button>
+
+          <button id="add-to-cart-button" type="button">Add to Cart</button>
+          <script>
+            var cartCounter = document.getElementById("cartCounter");
+            var itemCount = 0;
+            function addToCart() {
+              itemCount++;
+              cartCounter.textContent = itemCount;
+            }
+            document
+              .getElementById("add-to-cart-button")
+              .addEventListener("click", addToCart);
+          </script>
         </div>
       </div>
 

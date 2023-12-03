@@ -1,16 +1,3 @@
-function changeImage() {
-  const cartImage = document.getElementById("cart1");
-
-  if (cartImage.src.includes("photos/bag.png")) {
-    cartImage.src = "photos/bag-with-item.png";
-
-    cartImage.classList.add("changed-image");
-
-    document.querySelector(".add-to-cart-button button").disabled = true;
-    localStorage.setItem("cartImageSrc", "photos/bag-with-item.png");
-  }
-}
-
 function updateImages() {
   const dropdown = document.getElementById("dropdown");
   const mainProductPicture = document.getElementById("main-product-picture");
