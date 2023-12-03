@@ -425,76 +425,62 @@ main {
   background-color: white;
   width: 90%;
   margin-left: 5%;
-  margin-top: 0;
-  padding-top: 12rem;
 }
 #yourcart-grid {
   display: flex;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  margin-right: 10%;
-  margin-top: 0;
-  margin-left: 2%;
-  margin-bottom: 2%;
+  font-size: 1rem;
+}
+#cart-picture {
+  width: 30%;
+  max-width: 13rem;
+  margin: 2rem;
+}
+#cart-info {
+  margin: 2rem;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 .ymal {
   padding-top: 3rem;
 }
-#cart-picture {
-  width: 20%;
-  margin: 1rem;
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
 
 #your-cart {
-  margin-top: 0;
-
   font-family: "roboto-slab", serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #3d405b;
+  padding-top: 1.8rem;
 }
-.yctext {
-  color: black;
-  font-family: "roboto-slab", serif;
-  font-style: normal;
-  margin-left: 2rem;
-  word-spacing: 100dvh;
-}
+
+.shipping-text,
+.total-text,
 .subtotal-text {
   color: #3d405b;
   font-family: "roboto-slab", serif;
   font-style: normal;
-  font-size: 1.2rem;
-  margin: 0;
-  line-height: 0;
+  font-size: 1rem;
   display: flex;
   justify-content: space-between;
-}
-
-.price2 {
   line-height: 0;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-start: 2;
-  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
-.yctotal {
-  padding-bottom: 2rem;
+.main-cart {
+  padding-top: 7rem;
+}
+.total-text {
+  padding-bottom: 1rem;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2rem;
 }
 .shipping,
 .payment {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-#cart-info {
-  padding-left: 1rem;
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
+
 .line {
   border-bottom: 1px solid #888;
 }
@@ -510,16 +496,18 @@ h2 {
 }
 input {
   margin: 0.4rem;
-  width: 19rem;
+  width: 35%;
   margin-left: 2rem;
   height: 1.8rem;
   font-family: "roboto-slab", serif;
   font-weight: 400;
   font-style: normal;
+  padding-right: 2rem;
 }
-.box1,
-.box2,
-.box3 {
+.email {
+  width: 70%;
+}
+.box1 {
   width: 90%;
   margin-left: 5%;
   height: auto;
@@ -549,4 +537,18 @@ input {
 }
 .buttoncart:hover {
   text-decoration: underline;
+}
+@media screen and (max-width: 420px) {
+  .input {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 410px) {
+  .input {
+    max-width: 40%;
+  }
+  .email {
+    max-width: 100%;
+  }
 }

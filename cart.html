@@ -34,7 +34,7 @@
     </header>
 
     <!-- MAIN -->
-    <main>
+    <main class="main-cart">
       <!-- your cart section -->
       <div class="yccontainer">
         <h1 id="your-cart">Your cart</h1>
@@ -52,14 +52,17 @@
           <p>Subtotal</p>
           <br />
           <p>€20,00</p>
-
-          <br />
+        </div>
+        <div class="shipping-text">
           <p>Shipping</p>
           <br />
           <p>€6,00</p>
         </div>
-
-        <p class="yctotal">Total €26,00</p>
+        <div class="total-text">
+          <p>Total</p>
+          <br />
+          <p>€26,00</p>
+        </div>
       </div>
       <!-- you might also like section -->
       <h1 class="ymal">You might also like...</h1>
@@ -108,11 +111,16 @@
         <hr />
         <br />
         <form>
+          <input
+            type="email"
+            placeholder="Email"
+            required
+            class="email"
+          /><br />
           <input type="text" placeholder="Name" required />
           <input type="text" placeholder="Surname" required />
-          <input type="email" placeholder="Email" required />
           <br />
-          <input type="text" placeholder="Phone Number (optional)" />
+          <input type="text" placeholder="Phone Number" />
         </form>
         <br />
 
