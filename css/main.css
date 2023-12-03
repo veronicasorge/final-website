@@ -64,6 +64,7 @@ a {
 }
 a:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 #logo {
@@ -374,6 +375,13 @@ figcaption {
   border-radius: 1rem;
   margin-top: 5rem;
   border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#add-to-cart-button:hover {
+  text-decoration: underline;
 }
 
 .ymal-grid-container {
@@ -411,6 +419,7 @@ body {
 main {
   padding-top: 0;
 }
+
 /* CART PAGE*/
 .yccontainer {
   background-color: white;
@@ -536,6 +545,7 @@ input {
   background-color: #3d405b;
   color: white;
   border: none;
+  cursor: pointer;
 }
 .buttoncart:hover {
   text-decoration: underline;
