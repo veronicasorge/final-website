@@ -6,13 +6,20 @@ body {
   padding: 0%;
   width: 100%;
 }
-* h1 {
+h1 {
   padding-left: 2rem;
   font-family: "playfair-display", serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.7rem;
+  font-size: 16pt;
 }
+
+@media screen and (max-width: 700px) {
+  h1 {
+    padding-left: 2.5rem;
+  }
+}
+
 /*header*/
 header {
   display: flex;
@@ -26,18 +33,13 @@ header {
   position: fixed;
 }
 
-#sidebar-container {
-  display: none;
-}
-
 #icons {
   display: flex;
-  margin-inline: 1rem;
 }
 
 #icons img {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.2rem;
+  height: 1.2rem;
   margin: 0.4rem;
   display: flex;
 }
@@ -47,6 +49,7 @@ ul {
   list-style: none;
   font-size: 1rem;
   margin: 0;
+  white-space: nowrap;
 }
 
 li {
@@ -67,7 +70,7 @@ a:hover {
   font-family: "joly-display", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 2rem;
+  font-size: 25pt;
   padding-left: 2rem;
 }
 
@@ -75,40 +78,11 @@ a:hover {
   display: none;
 }
 
-@media screen and (max-width: 827px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: start;
-    z-index: 1;
-    width: 13rem;
-    height: 100%;
-  }
-
+@media screen and (max-width: 700px) {
   #sidebar-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: start;
     z-index: 1;
-    width: 0;
-  }
-
-  #sidebar-container.open {
-    width: 13rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
-
-  nav li {
-    margin: 5px 0;
-  }
-
-  #icons {
-    margin-left: 3rem;
-    margin-top: 130%;
   }
 
   #sidebar-logo {
@@ -117,15 +91,21 @@ a:hover {
     align-items: center;
   }
 
-  #logo {
-    padding: 0;
-  }
-
   #sidebar-icon {
     display: block;
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-left: 2rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-left: 1rem;
+  }
+
+  #icons img {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0.5;
+  }
+
+  nav ul {
+    display: none;
   }
 }
 
@@ -135,33 +115,29 @@ footer {
   margin-top: 1rem;
   padding-bottom: 1rem;
   color: white;
-  position: absolute;
-  left: 0;
-  right: 0px;
   list-style: none;
 }
 
 .grid-footer-container {
   display: grid;
   grid-template-columns: repeat (3, 1fr);
-  grid-template-rows: 1fr;
-
   text-align: left;
-  margin: 0;
 }
+
 .footer-contacts {
   grid-column-start: 1;
   grid-column-end: 2;
 }
+
 .footer-customer-care {
   grid-column-start: 2;
   grid-column-end: 3;
-  padding-left: 50%;
+  padding-left: 15rem;
 }
 .footer-about-us {
   grid-column-start: 3;
   grid-column-end: 4;
-  padding-left: 50%;
+  padding-left: 15rem;
 }
 
 .footer-contacts,
@@ -170,6 +146,41 @@ footer {
   margin: 0;
   padding-top: 1rem;
   margin-left: 2rem;
+}
+
+@media screen and (max-width: 985px) {
+  .footer-customer-care {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-left: 10rem;
+  }
+  .footer-about-us {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    padding-left: 10rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  footer {
+    font-size: 8pt;
+  }
+  .footer-customer-care {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-left: 0rem;
+  }
+  .footer-about-us {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    padding-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .grid-footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* HOMEPAGE */
@@ -204,18 +215,10 @@ footer {
   grid-column-end: 3;
 }
 
-@media screen and (max-width: 827px) {
-  .gold-green-earings,
-  .jewlery-girl {
-    margin-top: 0;
-  }
-}
-
 /*categories grid*/
 #categories-grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  object-fit: cover;
 }
 
 figcaption {
@@ -224,7 +227,13 @@ figcaption {
 
 .categories-pictures {
   width: 100%;
-  object-fit: cover;
+}
+
+@media screen and (max-width: 700px) {
+  #categories-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /*bestsellers grid*/
@@ -236,6 +245,13 @@ figcaption {
 
 .bestsellers-pictures {
   width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  #bestsellers-grid-container {
+    grid-template-columns: 1fr;
+    object-fit: cover;
+  }
 }
 
 /* EARRINGS PRODUCT PAGE */
@@ -255,14 +271,17 @@ figcaption {
   margin-left: 1rem;
   margin-bottom: 0;
 }
+
 .filterby {
   text-align: right;
   margin-top: 3rem;
   margin-bottom: 0;
 }
+
 .filterby:hover {
   text-decoration: underline;
 }
+
 .hoops,
 .droop,
 .helix,
@@ -292,31 +311,22 @@ figcaption {
 
 .earrings-pictures {
   width: 100%;
-  object-fit: cover;
   margin-top: 1rem;
-}
-
-.earrings {
-  * {
-    margin: 0 auto;
-    padding: 0 auto;
-  }
 }
 
 /* DETAIL PAGE */
 
 #detail-page-grid-1 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 0;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 5rem;
+  column-gap: 2rem;
 }
 
 #main-product-picture {
   margin-top: 10rem;
   margin-bottom: 2rem;
-  width: 80%;
-  grid-column: span 2;
+  width: 40rem;
 }
 
 #description-and-buttons {
@@ -333,15 +343,18 @@ figcaption {
 }
 
 #secondary-pictures {
+  direction: column;
+  margin-top: 10.5rem;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1rem;
-  margin-top: 7rem;
-  margin-left: 2rem;
+  height: 40rem;
 }
 
 .product-pictures {
-  width: 80%;
+  width: 12rem;
+}
+
+.product-description {
+  width: 20rem;
 }
 
 #dropdown {
@@ -374,17 +387,23 @@ figcaption {
   width: 100%;
   align-items: center;
 }
-.product-description {
-  width: 20rem;
+
+@media screen and (max-width: 950px) {
+  .ymal-grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .ymal-grid-container2 {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-#cart1.changed-image {
-  width: 1.8rem;
-  height: 1.9rem;
-
-  margin: 0;
-  padding-right: 0.5rem;
-  padding-left: 0.2rem;
+@media screen and (max-width: 450px) {
+  .ymal-grid-container {
+    grid-template-columns: 1fr;
+  }
+  .ymal-grid-container2 {
+    grid-template-columns: 1fr;
+  }
 }
 body {
   padding-top: 0;
@@ -520,24 +539,4 @@ input {
 }
 .buttoncart:hover {
   text-decoration: underline;
-}
-/* MEDIA QUERIE*/
-@media screen and (max-width: 600px) {
-  #categories-grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .categories-pictures {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-  #earrings-grid-container {
-    grid-template-columns: 1fr 1fr;
-  }
-  .ymal-grid-container {
-    grid-template-columns: 1fr 1fr;
-  }
-  .ymal-grid-container2 {
-    grid-template-columns: 1fr 1fr;
-  }
 }
