@@ -1,3 +1,14 @@
+let cartCount = 0;
+document.getElementById("cartCounter").innerText = cartCount;
+document
+  .getElementById("add-to-cart-button")
+  .addEventListener("click", addToCart);
+
+function addToCart() {
+  cartCount++;
+  document.getElementById("cartCounter").innerText = cartCount;
+}
+
 function updateImages() {
   const dropdown = document.getElementById("dropdown");
   const mainProductPicture = document.getElementById("main-product-picture");
@@ -11,22 +22,3 @@ function updateImages() {
     detailPicture3.src = "photos/detail-3.jpg";
   }
 }
-
-const images = document.querySelectorAll(".earrings-pictures");
-
-images.forEach((image) => {
-  image.addEventListener("mouseover", () => {
-    const imageName = dropearrings.id; // Get the ID of the hovered image
-    image.src = `/photos/drop.webp${imageName}-hover.jpg`; // Change source to the hover image
-  });
-
-  image.addEventListener("mouseout", () => {
-    const imageName = image.id; // Get the ID of the hovered image
-    image.src = `photos/${imageName}.jpg`; // Change source back to the original image
-  });
-});
-
-document.getElementById("sidebar-icon").addEventListener("click", function () {
-  // Toggle the 'open' class on the sidebar container
-  document.getElementById("sidebar-container").classList.toggle("open");
-});
