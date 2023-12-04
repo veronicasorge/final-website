@@ -10,13 +10,25 @@
   <body>
     <!-- HEADER -->
     <header>
-      <div id="sidebar-logo">
-        <a href="homepage.html"><p id="logo">billie</p></a>
-        <img src="photos/menu.png" alt="sidebar icon" id="sidebar-icon" />
+      <a href="homepage.html"><p id="logo">billie</p></a>
+
+      <div class="dropdown">
+        <button onclick="toggleDropdown()" class="dropdown-btn">
+          <img src="photos/menu.png" alt="dropdown icon" id="dropdown-icon" />
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a>New In</a>
+          <a>Bestsellers</a></li>
+          <a>Rings</a></li>
+          <a>Necklaces</a></li>
+          <a>Bracelets</a></li>
+          <a href="earrings.html">Earrings</a></li>
+        </div>
       </div>
+
       <nav>
         <ul>
-          <li id="new-in"><a>New In</a></li>
+          <li><a>New In</a></li>
           <li><a>Bestsellers</a></li>
           <li><a>Rings</a></li>
           <li><a>Necklaces</a></li>
@@ -24,7 +36,6 @@
           <li><a href="earrings.html">Earrings</a></li>
         </ul>
       </nav>
-
       <div id="icons">
         <img src="photos/like.png" alt="favorites" />
         <img src="photos/user.png" alt="user" />
@@ -64,10 +75,10 @@
 
         <div id="description-and-buttons">
           <p id="billie">billie</p>
-          <p class="name-price">
-            Mercy Earrings <br />
-            <br />€20,00
-          </p>
+          <div id="name-price">
+          <p id="name">Mercy Earrings</p>
+          <p id="price">€20,00</p>
+          </div>
           <p class="product-description">
             Enhance your style with our Rainbow Drop Earrings. These vibrant and
             eye-catching accessories feature a mesmerizing array of colors,
@@ -75,7 +86,6 @@
             with precision and attention to detail, our Rainbow Drop Earrings
             are the perfect statement piece to express your unique personality.
           </p>
-          <br />
           <!-- dropdown menu -->
           <label id="label-dropdown" for="dropdown">Select an option:</label>
           <select id="dropdown" name="dropdown" onchange="updateImages()">
@@ -89,11 +99,11 @@
         </div>
       </div>
 
-      <br />
+  
 
       <!-- you might also like section -->
       <h1>You might also like...</h1>
-      <br />
+      
       <div class="ymal-grid-container">
         <figure>
           <img
@@ -164,7 +174,6 @@
         </div>
       </div>
     </footer>
-<<<<<<< Updated upstream
     <header>
       <div id="sidebar-logo">
         <img src="photos/menu.png" alt="sidebar icon" id="sidebar-icon" />
@@ -234,8 +243,6 @@
         <a href="cart.html"><img src="photos/bag.png" alt="cart" /></a>
       </div>
     </header>
-=======
->>>>>>> Stashed changes
     <script src="js/main.js"></script>
   </body>
 </html>

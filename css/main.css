@@ -75,28 +75,20 @@ a:hover {
   padding-left: 2rem;
 }
 
-#sidebar-icon {
+#dropdown-icon,
+.dropdown {
   display: none;
 }
 
-@media screen and (max-width: 700px) {
-  #sidebar-container {
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
-  }
-
-  #sidebar-logo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-  }
-
-  #sidebar-icon {
+@media screen and (max-width: 745px) {
+  #dropdown-icon {
     display: block;
-    width: 1.3rem;
-    height: 1.3rem;
-    margin-left: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  #logo {
+    padding-left: 3.5rem;
   }
 
   #icons img {
@@ -107,6 +99,41 @@ a:hover {
 
   nav ul {
     display: none;
+  }
+
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+
+  .dropdown-btn {
+    background-color: white;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    left: 0.5rem;
+    top: 1rem;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
   }
 }
 
@@ -265,6 +292,7 @@ figcaption {
   padding-top: 3rem;
   justify-content: left;
 }
+
 .filter {
   width: 1.8rem;
   float: right;
@@ -315,25 +343,46 @@ figcaption {
   margin-top: 1rem;
 }
 
-/* DETAIL PAGE */
+@media screen and (max-width: 985px) {
+  #earrings-grid-container {
+    grid-template-columns: 1fr 1fr;
+    object-fit: cover;
+  }
+}
 
+@media screen and (max-width: 700px) {
+  #earrings-grid-container {
+    grid-template-columns: 1fr;
+    object-fit: cover;
+  }
+}
+/* DETAIL PAGE */
 #detail-page-grid-1 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: 5rem;
-  column-gap: 2rem;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
 }
 
 #main-product-picture {
-  margin-top: 10rem;
-  margin-bottom: 2rem;
-  width: 40rem;
+  width: 100%;
+}
+
+#secondary-pictures {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.product-pictures {
+  width: 60%;
+  margin-left: 10%;
+  margin-top: 5%;
 }
 
 #description-and-buttons {
-  margin-top: 10rem;
-  margin-right: 11rem;
   text-align: left;
+  width: 80%;
+  margin-left: 10%;
 }
 
 #billie {
@@ -341,21 +390,6 @@ figcaption {
   font-size: 18pt;
   font-weight: bold;
   color: #3d405b;
-}
-
-#secondary-pictures {
-  direction: column;
-  margin-top: 10.5rem;
-  display: grid;
-  height: 40rem;
-}
-
-.product-pictures {
-  width: 12rem;
-}
-
-.product-description {
-  width: 20rem;
 }
 
 #dropdown {
@@ -382,6 +416,72 @@ figcaption {
 
 #add-to-cart-button:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  #detail-page-grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 6rem;
+  }
+
+  #main-product-picture {
+    margin-left: 10%;
+    width: 80%;
+  }
+
+  #secondary-pictures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1%;
+    width: 80%;
+    margin-left: 7%;
+    margin-bottom: 5%;
+  }
+
+  .product-pictures {
+    width: 100%;
+  }
+
+  #billie {
+    font-family: "joly-display", sans-serif;
+    font-size: 18pt;
+    font-weight: bold;
+    color: #3d405b;
+  }
+
+  #name-price {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  .product-description {
+    margin-bottom: 3rem;
+  }
+
+  #dropdown {
+    height: 2rem;
+    margin-top: 1rem;
+    background-color: #3d405b;
+    color: white;
+  }
+
+  #add-to-cart-button {
+    height: 2rem;
+    background-color: #3d405b;
+    color: white;
+    border-radius: 1rem;
+    margin-top: 5rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  #add-to-cart-button:hover {
+    text-decoration: underline;
+  }
 }
 
 .ymal-grid-container {
@@ -504,6 +604,7 @@ input {
   font-style: normal;
   padding-right: 2rem;
 }
+
 .email {
   width: 70%;
 }

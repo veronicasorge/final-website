@@ -22,3 +22,18 @@ function updateImages() {
     detailPicture3.src = "photos/detail-3.jpg";
   }
 }
+
+function toggleDropdown() {
+  const dropdown = document.getElementById("myDropdown");
+  dropdown.style.display =
+    dropdown.style.display === "block" ? "none" : "block";
+}
+
+window.onclick = function (event) {
+  if (!event.target.matches(".dropdown-btn")) {
+    const dropdown = document.getElementById("myDropdown");
+    if (dropdown.style.display === "block") {
+      dropdown.style.display = "none";
+    }
+  }
+};

@@ -11,13 +11,25 @@
   <body>
     <!-- HEADER -->
     <header>
-      <div id="sidebar-logo">
-        <a href="homepage.html"><p id="logo">billie</p></a>
-        <img src="photos/menu.png" alt="sidebar icon" id="sidebar-icon" />
+      <a href="homepage.html"><p id="logo">billie</p></a>
+
+      <div class="dropdown">
+        <button onclick="toggleDropdown()" class="dropdown-btn">
+          <img src="photos/menu.png" alt="dropdown icon" id="dropdown-icon" />
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a>New In</a>
+          <a>Bestsellers</a></li>
+          <a>Rings</a></li>
+          <a>Necklaces</a></li>
+          <a>Bracelets</a></li>
+          <a href="earrings.html">Earrings</a></li>
+        </div>
       </div>
+
       <nav>
         <ul>
-          <li id="new-in"><a>New In</a></li>
+          <li><a>New In</a></li>
           <li><a>Bestsellers</a></li>
           <li><a>Rings</a></li>
           <li><a>Necklaces</a></li>
@@ -28,7 +40,7 @@
       <div id="icons">
         <img src="photos/like.png" alt="favorites" />
         <img src="photos/user.png" alt="user" />
-        <div id="cartCounter">1</div>
+        <div id="cartCounter">0</div>
         <a href="cart.html"><img src="photos/bag.png" alt="cart" /></a>
       </div>
     </header>
