@@ -26,7 +26,7 @@ header {
   background-color: white;
   position: absolute;
   width: 100%;
-  height: 10%;
+  height: 3rem;
   align-items: center;
   justify-content: space-between;
   margin: 0;
@@ -114,21 +114,23 @@ a:hover {
     cursor: pointer;
     position: fixed;
     left: 0.5rem;
-    top: 1rem;
+    top: 0.5rem;
   }
 
   .dropdown-content {
     display: none;
     position: fixed;
     top: 3rem;
-    background-color: #f9f9f9;
+    width: 50%;
+    height: 100%;
+    background-color: white;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
 
   .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 20px 16px;
     text-decoration: none;
     display: block;
   }
@@ -197,12 +199,12 @@ footer {
   .footer-customer-care {
     grid-column-start: 2;
     grid-column-end: 3;
-    padding-left: 0rem;
+    padding-left: 2rem;
   }
   .footer-about-us {
     grid-column-start: 3;
     grid-column-end: 4;
-    padding-left: 0rem;
+    padding-left: 2rem;
   }
 }
 
@@ -233,13 +235,13 @@ footer {
 
 .gold-green-earings {
   width: 100%;
-  margin-top: 3rem;
+  padding-top: 3rem;
   grid-column-start: 1;
   grid-column-end: 2;
 }
 .jewlery-girl {
   width: 100%;
-  margin-top: 3rem;
+  padding-top: 3rem;
   grid-column-start: 2;
   grid-column-end: 3;
 }
@@ -323,6 +325,75 @@ figcaption {
   height: 2rem;
   font-weight: 700;
   width: 8rem;
+}
+
+#category-dropdown-icon,
+.category-dropdown {
+  display: none;
+}
+
+@media screen and (max-width: 745px) {
+  .hoops,
+  .droop,
+  .helix,
+  .studs,
+  .single {
+    display: none;
+  }
+
+  #category-dropdown-icon {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: fixed;
+    top: 6.5rem;
+    left: 9rem;
+  }
+
+  .category-dropdown {
+    position: absolute;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+
+  .category-dropdown-btn {
+    background-color: white;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 6.5rem;
+    left: 9rem;
+  }
+
+  .category-dropdown-content {
+    background-color: white;
+    width: 30%;
+    height: 8rem;
+    padding: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    position: fixed;
+    top: 8rem;
+    left: 9rem;
+  }
+
+  .content {
+    padding-right: 5rem;
+    white-space: nowrap;
+    line-height: 1.6rem;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 20px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .category-dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
 }
 
 #earrings-title {
