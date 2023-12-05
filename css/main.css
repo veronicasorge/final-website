@@ -121,16 +121,15 @@ a:hover {
     display: none;
     position: fixed;
     top: 3rem;
-    width: 50%;
+    width: 40%;
     height: 100%;
     background-color: white;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
   }
 
   .dropdown-content a {
     color: black;
-    padding: 20px 16px;
+    padding: 20px;
     text-decoration: none;
     display: block;
   }
@@ -294,6 +293,7 @@ figcaption {
   padding-right: 2rem;
   padding-top: 3rem;
   justify-content: left;
+  margin-left: 1rem;
 }
 
 .filter {
@@ -325,6 +325,7 @@ figcaption {
   height: 2rem;
   font-weight: 700;
   width: 8rem;
+  margin-bottom: 3rem;
 }
 
 #category-dropdown-icon,
@@ -345,7 +346,6 @@ figcaption {
     display: block;
     width: 1.5rem;
     height: 1.5rem;
-    z-index: 1;
   }
 
   .category-dropdown {
@@ -392,6 +392,7 @@ figcaption {
 #earrings-title {
   margin-top: 0;
   padding-top: 6rem;
+  margin-left: 1rem;
 }
 
 #earrings-grid-container {
@@ -419,6 +420,7 @@ figcaption {
     object-fit: cover;
   }
 }
+
 /* DETAIL PAGE */
 #detail-page-grid-1 {
   display: grid;

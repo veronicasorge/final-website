@@ -38,17 +38,17 @@ window.onclick = function (event) {
   }
 };
 
-function toggleDropdown() {
-  const dropdown = document.getElementById("category-dropdown");
-  dropdown.style.display =
-    dropdown.style.display === "block" ? "none" : "block";
+function toggleCategoryDropdown() {
+  const categorydropdown = document.getElementById("category-dropdown");
+  categorydropdown.style.display =
+    categorydropdown.style.display === "block" ? "none" : "block";
 }
 
 window.onclick = function (event) {
-  if (!event.target.matches(".dropdown-btn")) {
-    const dropdown = document.getElementById("myDropdown");
-    if (dropdown.style.display === "block") {
-      dropdown.style.display = "none";
+  if (!event.target.matches(".category-dropdown-btn")) {
+    const categorydropdown = document.getElementById("category-dropdown");
+    if (categorydropdown.style.display === "block") {
+      categorydropdown.style.display = "none";
     }
   }
 };
