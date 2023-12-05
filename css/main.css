@@ -345,25 +345,22 @@ figcaption {
     display: block;
     width: 1.5rem;
     height: 1.5rem;
-    position: fixed;
-    top: 6.5rem;
-    left: 9rem;
+    z-index: 1;
   }
 
   .category-dropdown {
-    position: absolute;
     display: inline-block;
     margin-top: 1rem;
+    position: relative;
+    bottom: 6.5rem;
+    left: 9rem;
   }
 
   .category-dropdown-btn {
-    background-color: white;
+    background-color: #fffcf7;
     color: white;
     border: none;
     cursor: pointer;
-    position: fixed;
-    top: 6.5rem;
-    left: 9rem;
   }
 
   .category-dropdown-content {
@@ -372,10 +369,6 @@ figcaption {
     height: 8rem;
     padding: 1rem;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    position: fixed;
-    top: 8rem;
-    left: 9rem;
   }
 
   .content {
@@ -404,15 +397,13 @@ figcaption {
 #earrings-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 5rem;
+  padding-top: 0;
   align-items: center;
   clear: both;
-  padding-top: 0;
 }
 
 .earrings-pictures {
   width: 100%;
-  margin-top: 1rem;
 }
 
 @media screen and (max-width: 985px) {
