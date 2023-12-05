@@ -143,73 +143,24 @@ a:hover {
 footer {
   background-color: #3d405b;
   margin-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
   color: white;
-  list-style: none;
 }
 
 .grid-footer-container {
   display: grid;
-  grid-template-columns: repeat (3, 1fr);
-  text-align: left;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  list-style: none;
+  justify-content: space-around;
+  padding: 0 15px;
 }
 
-.footer-contacts {
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-
-.footer-customer-care {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  padding-left: 15rem;
-}
-.footer-about-us {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  padding-left: 15rem;
-}
-
-.footer-contacts,
-.footer-customer-care,
-.footer-about-us {
-  margin: 0;
-  padding-top: 1rem;
-  margin-left: 2rem;
-}
-
-@media screen and (max-width: 985px) {
-  .footer-customer-care {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    padding-left: 10rem;
-  }
-  .footer-about-us {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    padding-left: 10rem;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  footer {
-    font-size: 8pt;
-  }
-  .footer-customer-care {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    padding-left: 2rem;
-  }
-  .footer-about-us {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    padding-left: 2rem;
-  }
-}
-
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 410px) {
   .grid-footer-container {
-    grid-template-columns: 1fr 1fr;
+    font-size: smaller;
+    gap: 5px;
+    padding-left: 25px;
   }
 }
 
