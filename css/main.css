@@ -275,9 +275,22 @@ figcaption {
   border: #e07a5f;
   border-radius: 0.2rem;
   height: 2rem;
-  font-weight: 700;
+  color: white;
+
   width: 8rem;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
+  animation-name: growEarringButton;
+}
+button:hover {
+  animation: growEarringButton 1.5s ease-in-out forwards;
+}
+@keyframes growEarringButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
 }
 
 #category-dropdown-icon,
@@ -424,15 +437,23 @@ figcaption {
   background-color: #3d405b;
   color: white;
   border-radius: 1rem;
-  margin-top: 5rem;
   border: none;
   font-size: 1rem;
-  font-weight: bold;
+  margin-top: 1rem;
   cursor: pointer;
+  animation-name: growButton;
 }
 
 #add-to-cart-button:hover {
-  text-decoration: underline;
+  animation: growButton 1.5s ease-in-out forwards;
+}
+@keyframes growButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
 }
 
 @media (max-width: 768px) {
@@ -482,22 +503,6 @@ figcaption {
     margin-top: 1rem;
     background-color: #3d405b;
     color: white;
-  }
-
-  #add-to-cart-button {
-    height: 2rem;
-    background-color: #3d405b;
-    color: white;
-    border-radius: 1rem;
-    margin-top: 5rem;
-    border: none;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-  }
-
-  #add-to-cart-button:hover {
-    text-decoration: underline;
   }
 }
 
@@ -645,7 +650,6 @@ input {
   margin-left: 5%;
   font-size: 1rem;
   margin-bottom: 2rem;
-  font-weight: bold;
   border-radius: 1rem;
   width: 15rem;
   height: 2rem;
@@ -653,10 +657,21 @@ input {
   color: white;
   border: none;
   cursor: pointer;
+  animation-name: growConfirmButton;
 }
+
 .buttoncart:hover {
-  text-decoration: underline;
+  animation: growConfirmButton 1.5s ease-in-out forwards;
 }
+@keyframes growConfirmButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
 @media screen and (max-width: 420px) {
   .input {
     width: 100%;
@@ -713,7 +728,6 @@ input {
 #home-button {
   font-size: 1rem;
   margin-bottom: 2rem;
-  font-weight: bold;
   border-radius: 1rem;
   width: 15rem;
   height: 2rem;
@@ -725,4 +739,16 @@ input {
   margin-left: auto;
   position: fixed;
   right: 10%;
+  animation-name: growHomeButton;
+}
+#home-button:hover {
+  animation: growHomeButton 1.5s ease-in-out forwards;
+}
+@keyframes growHomeButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
 }
