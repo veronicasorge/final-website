@@ -10,7 +10,7 @@ function addToCart() {
 }
 
 function updateImages() {
-  const dropdown = document.getElementById("dropdown");
+  const dropdown = document.getElementById("color-dropdown");
   const mainProductPicture = document.getElementById("main-product-picture");
   const detailPicture3 = document.getElementById("detail-picture-3");
 
