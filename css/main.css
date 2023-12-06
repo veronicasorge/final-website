@@ -248,24 +248,6 @@ figcaption {
   margin-left: 1rem;
 }
 
-.filter {
-  width: 1.8rem;
-  float: right;
-  margin-right: 2rem;
-  margin-left: 1rem;
-  margin-bottom: 0;
-}
-
-.filterby {
-  text-align: right;
-  margin-top: 3rem;
-  margin-bottom: 0;
-}
-
-.filterby:hover {
-  text-decoration: underline;
-}
-
 .hoops,
 .droop,
 .helix,
@@ -276,14 +258,15 @@ figcaption {
   border-radius: 0.2rem;
   height: 2rem;
   color: white;
-
   width: 8rem;
-  margin-bottom: 0;
+  margin-bottom: 4rem;
   animation-name: growEarringButton;
 }
+
 button:hover {
   animation: growEarringButton 1.5s ease-in-out forwards;
 }
+
 @keyframes growEarringButton {
   from {
     transform: scale(1);
