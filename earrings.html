@@ -54,10 +54,17 @@
         <button class="droop">Droop Earrings</button>
         <button class="single">Single Earrings</button>
       </div>
-      <div>
-        <img src="photos/setting.png" alt="filter" class="filter" />
-        <p class="filterby">Filter by</p>
-      </div>
+      <div class="category-dropdown">
+        <button onclick="toggleCategoryDropdown()" class="category-dropdown-btn">
+          <img src="photos/setting.png" alt="category dropdown icon" id="category-dropdown-icon" />
+        </button>
+        <div class="category-dropdown-content" id="category-dropdown">
+          <a class="content">Hoops</a>
+          <a class="content">Studs</a>
+          <a class="content">Helix</a>
+          <a class="content">Droop Earrings</a>
+          <a class="content">Single Earrings</a>
+        </div>
       <div id="earrings-grid-container">
         <a href="detail-page.html">
           <figure>
