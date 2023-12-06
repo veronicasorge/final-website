@@ -722,6 +722,17 @@ input {
   font-size: 1.8rem;
 }
 
+@media screen and (max-width: 475px) {
+  #box1,
+  #box2 {
+    font-size: 1rem;
+  }
+
+  #box2 {
+    height: 10rem;
+  }
+}
+
 #home-button {
   font-size: 1rem;
   margin-bottom: 2rem;
