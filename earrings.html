@@ -6,13 +6,13 @@
     <title>Earrings Product Page</title>
     <link rel="stylesheet" href="https://use.typekit.net/ahe7seo.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/ahe7seo.css" />
   </head>
 
   <body>
     <!-- HEADER -->
     <header>
       <a href="homepage.html"><p id="logo">billie</p></a>
+
       <div class="dropdown">
         <button onclick="toggleDropdown()" class="dropdown-btn">
           <img src="photos/menu.png" alt="dropdown icon" id="dropdown-icon" />
@@ -26,19 +26,21 @@
           <a href="earrings.html">Earrings</a></li>
         </div>
       </div>
+
       <nav>
         <ul>
-          <li id="new-in">New In</li>
-          <li>Bestsellers</li>
-          <li>Rings</li>
-          <li>Necklaces</li>
-          <li>Bracelets</li>
+          <li><a>New In</a></li>
+          <li><a>Bestsellers</a></li>
+          <li><a>Rings</a></li>
+          <li><a>Necklaces</a></li>
+          <li><a>Bracelets</a></li>
           <li><a href="earrings.html">Earrings</a></li>
         </ul>
       </nav>
       <div id="icons">
         <img src="photos/like.png" alt="favorites" />
         <img src="photos/user.png" alt="user" />
+        <div id="cartCounter">0</div>
         <a href="cart.html"><img src="photos/bag.png" alt="cart" /></a>
       </div>
     </header>
@@ -54,6 +56,8 @@
         <button class="droop">Droop Earrings</button>
         <button class="single">Single Earrings</button>
       </div>
+
+     
       <div class="category-dropdown">
         <button onclick="toggleCategoryDropdown()" class="category-dropdown-btn">
           <img src="photos/setting.png" alt="category dropdown icon" id="category-dropdown-icon" />
@@ -65,16 +69,19 @@
           <a class="content">Droop Earrings</a>
           <a class="content">Single Earrings</a>
         </div>
+      </div>
+
       <div id="earrings-grid-container">
         <a href="detail-page.html">
           <figure>
             <img
-              id="dropearrings"
+              id="drop-earrings"
               src="photos/main-rainbow-earrings.jpg"
               alt="colorful earings"
               class="earrings-pictures"
             />
-            <figcaption>Rainbow Drop Earrings <br />18€</figcaption>
+            <figcaption>Rainbow Drop Earrings</figcaption>
+            <figcaption>18€</figcaption>
           </figure></a
         >
 
@@ -85,7 +92,8 @@
             alt="gold and green earings"
             class="earrings-pictures"
           />
-          <figcaption>Green Gemstone Earrings <br />24€</figcaption>
+          <figcaption>Green Gemstone Earrings</figcaption>
+          <figcaption>24€</figcaption>
         </figure>
 
         <figure>
@@ -95,7 +103,8 @@
             alt="ribbon earrings"
             class="earrings-pictures"
           />
-          <figcaption>Blue Gems Ribbons <br />17€</figcaption>
+          <figcaption>Blue Gems Ribbons</figcaption>
+          <figcaption>17€</figcaption>
         </figure>
 
         <figure>
@@ -105,7 +114,8 @@
             alt="saftey pin earrings"
             class="earrings-pictures"
           />
-          <figcaption>Pearl Clip Earrings <br />18€</figcaption>
+          <figcaption>Pearl Clip Earrings</figcaption>
+          <figcaption>18€</figcaption>
         </figure>
 
         <figure>
@@ -115,7 +125,8 @@
             alt="red heart earings"
             class="earrings-pictures"
           />
-          <figcaption>Red Heart Earrings <br />24€</figcaption>
+          <figcaption>Red Heart Earrings</figcaption>
+          <figcaption>24€</figcaption>
         </figure>
 
         <figure>
@@ -125,7 +136,8 @@
             alt="sparkle bow earings"
             class="earrings-pictures"
           />
-          <figcaption>Bow Sparkle Earrings <br />18€</figcaption>
+          <figcaption>Bow Sparkle Earrings </figcaption>
+          <figcaption>18€</figcaption>
         </figure>
 
         <figure>
@@ -135,7 +147,8 @@
             alt="star earings"
             class="earrings-pictures"
           />
-          <figcaption>Star Earrings <br />16€</figcaption>
+          <figcaption>Star Earrings</figcaption>
+          <figcaption>16€</figcaption>
         </figure>
 
         <figure>
@@ -145,7 +158,8 @@
             alt="gold heart earings"
             class="earrings-pictures"
           />
-          <figcaption>Heart Earrings <br />27€</figcaption>
+          <figcaption>Heart Earrings</figcaption>
+          <figcaption>27€</figcaption>
         </figure>
 
         <figure>
@@ -155,12 +169,12 @@
             alt="hoop earings"
             class="earrings-pictures"
           />
-          <figcaption>Sun Hoop earrings <br />17€</figcaption>
+          <figcaption>Sun Hoop earrings</figcaption>
+          <figcaption>17€</figcaption>
         </figure>
       </div>
     </main>
 
-    <!-- FOOTER -->
     <!-- FOOTER -->
     <footer>
       <div class="grid-footer-container">
