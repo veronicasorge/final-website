@@ -729,6 +729,7 @@ input {
   cursor: pointer;
   margin-top: 3rem;
   margin-left: 10rem;
+  animation-name: growEarringButton;
 }
 
 @media screen and (max-width: 450px) {
